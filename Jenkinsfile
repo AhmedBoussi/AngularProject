@@ -1,6 +1,5 @@
 pipeline {
-  agent {
-    docker { image 'node:latest' }
+  agent {docker { image 'angular/ngcontainer:latest' }
   }
   stages {
     stage('Install') {
